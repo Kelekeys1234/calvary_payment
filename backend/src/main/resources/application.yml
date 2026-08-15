@@ -1,0 +1,29 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: payment-app
+  jackson:
+    default-property-inclusion: non_null
+    serialization:
+      write-dates-as-timestamps: false
+
+google:
+  sheets:
+    spreadsheet-id: ${GOOGLE_SHEETS_SPREADSHEET_ID:}
+    users-sheet: ${GOOGLE_SHEETS_USERS_SHEET:Users}
+    payments-sheet: ${GOOGLE_SHEETS_PAYMENTS_SHEET:Payments}
+    # Path to the service account JSON credentials file.
+    # NEVER commit the actual credentials file to source control.
+    credentials-path: ${GOOGLE_APPLICATION_CREDENTIALS:credentials/service-account.json}
+    application-name: payment-app
+
+app:
+  # Hardcoded for v1. Replace with SecurityContext lookup once auth is added.
+  default-created-by: Diana
+
+logging:
+  level:
+    root: INFO
+    com.example.payment: DEBUG

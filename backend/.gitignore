@@ -1,0 +1,10 @@
+target/
+*.class
+.idea/
+*.iml
+.vscode/
+.DS_Store
+credentials/service-account.json
+credentials/*.json
+!credentials/.gitkeep
+.env
