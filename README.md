@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Payment Management Web Application
 
 A full-stack app that replaces a Google Form for recording payments. Google Sheets is the data
@@ -83,3 +84,7 @@ The app opens on **http://localhost:5173** and talks to the backend at
   server-side, per the spec.
 - CORS on the backend is pre-configured to allow `localhost`/`127.0.0.1` on any port for local
   development. Tighten `backend/.../config/WebConfig.java` before deploying anywhere public.
+=======
+# calvary_payment
+calvary_payment
+>>>>>>> 0731601a5a0427ff659c03071f5fad06d655dc84
